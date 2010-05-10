@@ -1,0 +1,4 @@
+#!/bin/sh
+
+[ -f ~/.gedit-2/plugins/libproject.so ] && rm ~/.gedit-2/plugins/libproject.so
+[ -f ~/.gedit-2/plugins/project.gedit-plugin ] && rm ~/.gedit-2/plugins/project.gedit-plugin

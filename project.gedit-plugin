@@ -1,0 +1,6 @@
+[Gedit Plugin]
+Location=libproject
+Name=Project manager
+Description=Project manager tools
+Author= Kurucz István <never@delfin.unideb.hu>
+Copyright=Copyright © 2006 Kurucz István

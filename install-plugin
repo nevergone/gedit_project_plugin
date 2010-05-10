@@ -1,0 +1,8 @@
+#!/bin/sh
+
+[ ! -d ~/.gedit-2/plugins/ ] && mkdir -p ~/.gedit-2/plugins/
+[ -f ~/.gedit-2/plugins/libproject.so ] && rm ~/.gedit-2/plugins/libproject.so
+[ -f ~/.gedit-2/plugins/project.gedit-plugin ] && rm ~/.gedit-2/plugins/project.gedit-plugin
+
+cp libproject.so ~/.gedit-2/plugins/
+cp project.gedit-plugin ~/.gedit-2/plugins/
