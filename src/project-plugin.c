@@ -193,6 +193,7 @@ static void menuupdate (BonoboUIComponent *uic)  {
     gedit_menus_set_verb_sensitive (uic, "/commands/" PROJECT_REVERT_NAME, TRUE);
     gedit_menus_set_verb_sensitive (uic, "/commands/" PROJECT_SETTINGS_NAME, TRUE);
     gedit_menus_set_verb_sensitive (uic, "/commands/" PROJECT_INFO_NAME, TRUE);
+
   }
   else  {
     gedit_menus_set_verb_sensitive (uic, "/commands/" PROJECT_OPEN_NAME, TRUE);
@@ -240,18 +241,7 @@ G_MODULE_EXPORT GeditPluginState init (GeditPlugin *plugin)  {
 
 G_MODULE_EXPORT GeditPluginState activate (GeditPlugin *plugin)  {
   GList * top_windows;
-
   gedit_debug (DEBUG_PLUGINS, "");
-  
-  /************************/
-  GtkWidget * foablak = NULL;
-  GtkWidget * teszt = NULL;
-  
-  foablak = gedit_get_active_window ();
-//  teszt = gnome_app_get_dock_item_by_name (foablak, "Toolbar");
-  g_print ("%s\n", gtk_window_get_title (GTK_WINDOW(foablak)));  
-  
-  /************************/
   
   top_windows = gedit_get_top_windows ();
   g_return_val_if_fail (top_windows != NULL, PLUGIN_ERROR);

@@ -4,7 +4,6 @@
 
 #include <glib/gutils.h>
 #include <glib/gi18n.h>
-#include <libgnomeui/libgnomeui.h>
 #include <gedit/gedit2.h>
 #include <gedit/gedit-menus.h>
 #include <gedit/gedit-plugin.h>
