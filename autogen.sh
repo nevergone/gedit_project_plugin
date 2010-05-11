@@ -1,6 +1,7 @@
 #!/bin/sh -exu
 
 # elkeszitjuk a ./configure szkriptet, a szukseges beallitasokat
+libtoolize -f -c
 intltoolize -f -c
 # gond lehet a tobbi csomag telepitett makroallomanyaban (warning: underquoted definition of)
 # es ez nem kell nekunk, ezert a hibauzeneteket eldobjuk

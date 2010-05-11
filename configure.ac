@@ -56,11 +56,10 @@ PKG_CHECK_MODULES(DEPS, [
                   gtksourceview-1.0 >= 1.1.0
                   libgnomeui-2.0 >= 2.8.0
                   libglade-2.0 >= 2.4.0
-                  eel-2.0 >= 2.8.0
                   libgnomeprintui-2.2 >= 2.8.0
-                  gedit-2.8 >= 2.8.0
+                  gedit-2.20 >= 2.20.0
                   ])
-														
+
 dnl kiexportalja a PKG_CHECK_MODULES kimenetet a cflags -ba es a libs -be
 dnl ezaltal hozzafuzodik majd a Makefile -hez
 AC_SUBST(DEPS_CFLAGS)
@@ -84,9 +83,9 @@ AC_DEFINE_UNQUOTED(PROJECT_PLUGIN_LOCALEDIR, "$PROJECT_PLUGIN_LOCALEDIR", [Local
 
 dnl Makefile keszitese :)
 AC_OUTPUT([
-Makefile 
+Makefile
 po/Makefile.in
-src/Makefile 
+src/Makefile
 ])
 
 dnl munka vegen par valtozo megjelenitese, es egy kis segitseg a forditashoz :)
